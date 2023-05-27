@@ -1,64 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Recipe</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/media.css" />
 
-    
     <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap"
+      rel="stylesheet"
+    />
 
-     <!-- Fontawsom -->
-    <script src="https://kit.fontawesome.com/f5c0007ba0.js" crossorigin="anonymous"></script>
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Salsa&display=swap"
+      rel="stylesheet"
+    />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kurale&display=swap"
+      rel="stylesheet"
+    />
 
-<body>
+    <!-- Fontawsom -->
+    <script
+      src="https://kit.fontawesome.com/f5c0007ba0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
+  <body>
     <!-- Start header section -->
 
-    <header class="header-container">
+    <header class="header-container sticky">
+      <section class="header-left">
+        <img
+          src="assets/images/logo.png"
+          alt="This is a logo img for Recipe website"
+        />
+      </section>
+      <section class="header-nav">
+        <nav><a class="home active" href="home.html">Home</a></nav>
+        <nav><a class="active" href="list.html">Category</a></nav>
+        <nav><a class="active" href="submit.html">Sumbit Recipe</a></nav>
+      </section>
 
-        <section class="header-left">
-            <img src="images/logo.png" alt="This is a logo img for Recipe website">
-        </section>
-        <section class="header-nav">
-            <nav><a id="home" href="#">Home</a></nav>
-            <nav><a  href="#">Category</a></nav>
-            <nav><a  href="#">Sumbit Recipe</a></nav>
-            
-        </section>
-        <section class="header-right">
-             <input class="seacrhRecp"type="search" id="Recpsearch" placeholder="Search Recipe" >
-             <i class="fa-solid fa-heart  favouite" style="color: #ffcf00;"></i>
-        </section>
-           
+      <section class="header-right">
+        <form>
+          <input
+            class="seacrhRecp"
+            type="search"
+            id="Recpsearch"
+            placeholder="Search Recipe"
+          />
+        </form>
+        <i class="fa-solid fa-heart favouite" style="color: #ffcf00"></i>
+      </section>
+      <i class="fa-solid fa-bars toggle" style="color: #ffffff"></i>
     </header>
 
     <!-- Start Main section  that contain "hero section ,Poplure Recip, Most Gategory" -->
 
     <main>
-        <!-- Start hero section -->
-        <!-- Start features section -->
-        <!-- Start Most Gategory -->
+      <!-- Start hero section -->
+      <section class="hero-container">
+        <section class="hero-content">
+          <h1 class="hero-content-title">
+            Let's <span>Start</span> Cooking With Popular Recipes
+          </h1>
+          <p class="hero-content-desc">
+            Want to learn cook but confused how to start? No need to worry again
+            .
+          </p>
+          <button class="hero-btn">Get Started</button>
+        </section>
+        <section class="hero-img">
+          <img src="assets/images/hero-img.png" />
+        </section>
+      </section>
+      <!-- Start features section -->
+      <section class="features-container">
+        <section class="features-title">
+          <h1>Populer <span>ReCipes</span></h1>
+          <p class="features-subtitle">
+            From comfort Food classics to exoitc flovers,Our features recipes
+            are sure to impress
+          </p>
+        </section>
+        <section class="features-content">
+          <section class="features-content-item">
+            <img src="assets/images/features1.png" alt="shawrma-img" />
+            <section class="features-content-item-des">
+              <h3>Shawrma</h3>
+              <p>
+                The classic Italian dish features tender chicken breasts coated
+                in crispy breadcrumbs.
+              </p>
+              <section class="features-rating">
+                <i class="fa-solid fa-star" style="color: #ffcf00"></i>
+                <span>5</span>
+              </section>
+            </section>
+          </section>
+          <section class="features-content-item">
+            <img src="assets/images/features 2.png" alt="shawrma-img" />
+            <section class="features-content-item-des">
+              <h3>Cheesecake</h3>
+              <p>
+                These cake is the perfect balance of chewy and crispy,with gooey
+                pockets of melted
+              </p>
+              <section class="features-rating">
+                <i
+                  class="fa-regular fa-star-half-stroke"
+                  style="color: #ffcf00"
+                ></i>
+                <span>4.5</span>
+              </section>
+            </section>
+          </section>
+          <section class="features-content-item">
+            <img src="assets/images/features 3.png" alt="shawrma-img" />
+            <section class="features-content-item-des">
+              <h3>Beef Burger</h3>
+              <p>
+                These tacos are loaded with juicy shrimp that have been
+                marinated in a spicy blend of chili powder
+              </p>
+              <section class="features-rating">
+                <i class="fa-solid fa-star" style="color: #ffcf00"></i>
+                <span>5</span>
+              </section>
+            </section>
+          </section>
+        </section>
+        <section class="features-ViewMore">
+          <p>
+            View More
+            <i class="fa-solid fa-arrow-right" style="color: #ffcf00"></i>
+          </p>
+        </section>
+      </section>
 
+      <!-- Start Most Gategory -->
+      <section class="MostCategory-container">
+        <section class="MostCategory-title">
+          <h1>Most <span>Category</span></h1>
+        </section>
+        <section class="MostCategory-content">
+          <section class="MostCategory-content-item">
+            <a href="list.html"
+              ><img src="assets/images/category1.png" alt="Main courses"
+            /></a>
+            <p>Main courses</p>
+          </section>
+          <section class="MostCategory-content-item">
+            <a href="list.html"
+              ><img src="assets/images/category2.png" alt="Appetizers"
+            /></a>
+            <p>Appetizers</p>
+          </section>
+          <section class="MostCategory-content-item">
+            <a href="list.html"
+              ><img src="assets/images/category3.png" alt="Desserts"
+            /></a>
+            <p>Desserts</p>
+          </section>
+          <section class="MostCategory-content-item">
+            <a href="list.html"
+              ><img src="assets/images/category4.png" alt="Drinks"
+            /></a>
+            <p>Drinks</p>
+          </section>
+        </section>
+      </section>
     </main>
 
     <!-- Start Footer section -->
 
-    <footer>
+    <footer class="footer-container">
+      <section class="footer-top">
+        <img src="assets/images/logo.png" />
+        <p>
+          This website shows all recipes that can added by different
+          people.Enjoy it!
+        </p>
+      </section>
+      <section class="footer-socialmedia">
+        <a href="http://www.facebook.com" target="_blank"
+          ><img src="assets/images/facebook.png" alt="facebook-socialMedia"
+        /></a>
+        <a href="http://www.instagram.com" target="_blank"
+          ><img src="assets/images/instagram.png" alt="inst-socialMedia"
+        /></a>
+        <a
+          href="http://www.linkedin.com/check/add-phone?country_code=ps"
+          target="_blank"
+          ><img src="assets/images/linkedin.png" alt="linked-socialMedia"
+        /></a>
+      </section>
 
+      <section class="footer-nav">
+        <nav><a id="home" href="index.html">Home</a></nav>
+        <nav><a href="list.html">Category</a></nav>
+        <nav><a href="submit.html">Sumbit Recipe</a></nav>
+      </section>
+
+      <section class="footer-bottom">
+        <p class="copyright">© Copyright 2023</p>
+        <section class="footer-bottom-right">
+          <p>Terms & condition</p>
+          <p>PrivacyPolicy</p>
+        </section>
+      </section>
     </footer>
-
-    
-</body>
+  </body>
 </html>
