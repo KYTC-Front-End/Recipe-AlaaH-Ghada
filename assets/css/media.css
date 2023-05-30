@@ -1,0 +1,13 @@
+/*****Small Sreen ***/
+@media (max-width: 600px){
+    *{
+        font-size:12px;
+    }
+
+    .Category-container {
+        gap: 1rem;
+        margin-top: -1rem;
+        width: 80vw;
+    }
+    
+}
