@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+  }
+  /* ***************للstart list category page******************* */
+  .header-bottom {
+    height: 30vh;
+    background-image: url("../images/hero-background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+  }
+  .header-bottom-title {
+    color: aliceblue;
+    font-family: "Salsa", cursive;
+    padding-left: 4rem;
+    font-size: 1.7rem;
+  }
+  .Cat-container {
+    display: flex;
+    justify-content: center;
+    height: 33vh;
+    margin-top: 4rem;
+  }
+  .Category-container {
+    display: flex;
+    justify-content:space-around;
+    gap: 5rem;
+    align-items: center;
+    margin-top: 2rem;
+    width: 60vw;
+    border-radius: 5rem;
+    height: 7vh;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+  .Category-container nav a {
+    font-family: "Kurale", serif;
+    color:#000000;
+    font-style: bold;
+    transition: 0.5s linear;
+  }
+  .Category-container nav a:hover{
+  background-color: #FFCF00;
+   border-radius: 8px;
+  }
+  .category-card-container{
+    height: 127vh;
+  }
+  .category-card-items {
+    display: flex;
+    flex-wrap: wrap;
+    height: 114vh;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .category-item{
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 26%;
+    height:40vh;
+    position: relative;
+    border: 1px solid #F8F2F2;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    transition: 0.5s;
+  }
+  .category-item:hover{
+    transform:translateY(-20px);
+    background-color: #FFCF00;
+  }
+    .category-item img {
+        width: 9vw;
+        position: absolute;
+        top: -4.6rem;
+        left: 7.3rem;
+        z-index: 3;
+        transition: 0.5s;
+    }
+    .category-item img:hover{
+        transform:translateY(-20px);
+    }
+  .category-item-content P{
+    text-align: center;
+    font-size: 0.9rem;
+    line-height:1.2rem;
+    font-family: "Kurale", serif;
+    padding:0.5rem;
+  }
+  .category-item-content h3{
+    letter-spacing: 0.02em;
+    font-family: "Kurale", serif;
+  }
+  .rate-cat-item i:hover{
+    color:#000000;
+  }
+  .category-viewmore{
+    height:10vh;
+  }
+  .category-viewmore P{
+    padding: 0rem 4rem;
+    text-align: right;
+    font-size:1.5rem;
+    font-family: "Kurale", serif;
+  }

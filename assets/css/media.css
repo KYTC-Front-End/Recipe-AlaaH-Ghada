@@ -1,0 +1,36 @@
+@media (max-width: 600px) {
+  * {
+    font-size: 12px;
+  }
+
+  .Cat-container {
+    margin-top: 1rem;
+}
+.Category-container {
+  gap: 0rem;
+  width: 74vw;
+}
+.category-item {
+  width: 75%;
+}
+.category-item img {
+  width: 22vw;
+  top: -6.6rem;
+  left: 13.3rem;
+}
+.category-card-container {
+  height: 259vh;
+}
+.category-card-items {
+  gap: 10rem;
+  height: 362vh;
+}
+.category-card-container {
+    height: 377vh;
+}
+.category-viewmore P {
+  padding: 2rem 7rem;
+}
+
+
+}
