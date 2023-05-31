@@ -1,11 +1,9 @@
-/* Small Sreen */
+/**************************************** Small Sreen ****************************************/
 @media (max-width: 600px) {
-  * {
-    font-size: 12px;
-  }
+  /* home page */
 
   .header-left img {
-    width: 23vw;
+    width: 18vw;
   }
 
   .header-nav {
@@ -18,19 +16,23 @@
     flex-direction: column;
     position: absolute;
     top: 100%;
-    right: 0;
+    left: 0px;
     width: 100%;
+    padding: 1rem;
     background-color: black;
+    cursor: pointer;
   }
 
-  .header .header-right .seacrhRecp {
-    width: 27vw;
-    height: 5vh;
-    outline: 0;
+  .header-right .seacrhRecp {
+    width: 60vw;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    outline: none;
   }
 
   .hero-container {
-    height: 80vh;
+    height: 105vh;
     flex-direction: column;
     align-items: center;
   }
@@ -55,7 +57,7 @@
 
   .hero-btn {
     width: 35vw;
-    height: 6vh;
+    height: 9vh;
     font-size: 1.8rem;
   }
 
@@ -65,12 +67,12 @@
   }
 
   .features-container {
-    height: 244vh;
+    height: 406vh;
   }
 
   .features-title {
     text-align: center;
-    line-height: 1.5rem;
+    line-height: 1.3rem;
   }
 
   .features-title h1 {
@@ -92,8 +94,8 @@
   }
 
   .features-content-item {
-    width: 60%;
-    height: 64vh;
+    width: 80%;
+    height: 46rem;
   }
 
   .features-content-item h3 {
@@ -101,9 +103,10 @@
   }
 
   .features-content-item-des p {
-    font-size: 1.2rem;
     padding: 1.5rem;
     color: rgb(125 119 119);
+    font-size: 1.5rem;
+    line-height: 2.2rem;
   }
 
   .features-rating i,
@@ -112,11 +115,17 @@
   }
 
   .features-ViewMore p {
-    padding: 2rem 10rem;
+    padding: 2rem 6rem;
+    font-size: 2rem;
+  }
+
+  .features-ViewMore i {
+    font-size: 2rem;
+    padding: 2rem 0.5rem;
   }
 
   .MostCategory-container {
-    height: 92vh;
+    height: 120vh;
   }
 
   .MostCategory-title h1 {
@@ -145,7 +154,7 @@
   }
 
   .footer-container {
-    height: 47vh;
+    height: 63vh;
   }
 
   .footer-top {
@@ -182,11 +191,52 @@
   .footer-bottom-right {
     gap: 0.8rem;
   }
+
+  /* Details Page */
+  .details-hero {
+    height: 41vh;
+  }
+
+  .details-hero img {
+    width: 32%;
+  }
+
+  .details-recipe-title::after {
+    left: 8rem;
+  }
+
+  .details-ingredients {
+    padding: 1rem 0 0 8rem;
+  }
+
+  .details-ingredients::after {
+    left: 8rem;
+  }
+
+  .details-instructions {
+    padding: 1rem 0 0 8rem;
+    height: 56vh;
+  }
+
+  .dot {
+    height: 7px;
+    width: 7px;
+  }
+
+  .details-printrecipe {
+    height: 24vh;
+  }
+
+  .Print-recipe {
+    width: 29vw;
+    height: 9vh;
+  }
 }
 
-/* Tablet Screen */
+/************************************************** Tablet Screen **************************************/
 
-@media (min-width: 600px) and (max-width: 900px) {
+@media (min-width: 601px) and (max-width: 900px) {
+  /* home page */
   .header-left img {
     width: 18vw;
   }
@@ -196,7 +246,7 @@
   }
 
   .hero-container {
-    height: 59vh;
+    height: 67vh;
   }
 
   .hero-btn {
@@ -204,20 +254,21 @@
   }
 
   .features-container {
-    height: 103vh;
+    height: 133vh;
   }
 
   .features-content-item {
     width: 29vw;
-    height: 57vh;
+    height: 24rem;
   }
+
   .features-ViewMore p {
-    padding-top: 3rem;
-    text-align: center;
+    padding: 1.2rem;
+    text-align: right;
   }
 
   .MostCategory-container {
-    height: 43vh;
+    height: 58vh;
   }
 
   .MostCategory-title {
@@ -227,7 +278,7 @@
     font-size: 1.3rem;
   }
   .footer-container {
-    height: 57vh;
+    height: 74vh;
   }
   .footer-top {
     width: 50vw;
@@ -253,6 +304,41 @@
   }
   .footer-bottom-right {
     gap: 1rem;
+  }
+  /* details page */
+
+  .details-recipe-title {
+    height: 31vh;
+  }
+
+  .details-recipe-title::after {
+    left: 10rem;
+  }
+
+  .details-ingredients {
+    padding: 1rem 0 0 10rem;
+  }
+
+  .details-ingredients::after {
+    left: 10rem;
+  }
+
+  .details-instructions {
+    padding: 1rem 0 0 10rem;
+  }
+
+  .details-instructions {
+    height: 70vh;
+  }
+
+  .details-instructions-content p {
+    color: rgba(29, 29, 27, 0.788);
+    line-height: 3rem;
+  }
+
+  .Print-recipe {
+    width: 24vw;
+    height: 11vh;
   }
 }
 
