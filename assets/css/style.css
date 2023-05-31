@@ -6,6 +6,10 @@
   text-decoration: none;
 }
 
+body{
+  height:1000px;
+}
+
 /**************************************************** Start Header ******************************************************/
 .header-container {
   width: 100%;
@@ -68,6 +72,7 @@
   padding: 0.5rem;
   border-radius: 0.5rem;
   font-size: 1rem;
+  outline: none;
 }
 
 .header-right .favouite {
@@ -139,6 +144,7 @@
   position: relative;
   animation-duration: 4s;
   animation-delay: -2s;
+  cursor:pointer;
 }
 
 .hero-img {
@@ -330,3 +336,204 @@ h3 {
   display: flex;
   gap: 2rem;
 }
+
+
+
+/**************************************  Start Details Page *************************************************** */
+
+.details-hero{
+  background-image:url("../images/hero-background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position:relative;
+  width:100%;
+  height:60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.details-hero img{
+
+  width: 27%;
+
+}
+
+
+.details-icon{
+  width: 9%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  right: 8rem;
+  bottom: -1rem;
+  z-index: 1;
+  gap: 2rem;
+  /* box-shadow: #ffcf00 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
+ 
+ 
+  
+  
+}
+.details-icon i {
+  font-size: 1.5rem;
+  background-color: #ffcf00;
+  border-radius: 50%;
+  padding: 0.8rem;
+  box-shadow: #ffcf00 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  /* box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.28 */
+
+}
+
+.arrow-back {
+  font-size: 1.5rem;
+
+  position: absolute;
+  left: 4rem;
+  top: 2rem;
+  z-index: 1;
+}
+
+.arrow-back a.clicked{
+cursor: pointer;
+}
+
+.details-recipe-title{
+  height:25vh;
+ position: relative;
+  
+}
+
+.details-recipe-title::after {
+  content: "";
+  width: 70vw;
+  height: 0.2vh;
+  position: absolute;
+  left: 12rem;
+  background-color: #d4d4d4;
+}
+  
+
+.details-recipe-title h1{
+  text-align: center;
+  padding:2rem;
+  font-family:"Kurale", serif;
+  font-size: 1.5rem;
+}
+
+.details-recipe-des{
+  text-align: center; 
+ 
+}
+
+.details-recipe-des span{
+  display: inline-block;
+  padding:1rem;
+  margin-left:0.1rem;
+  font-family:"Kurale", serif ;
+  font-size: 1.2rem;
+  position: relative;
+}
+
+
+.details-ingredients{
+  padding: 1rem 0 0 13rem;
+
+}
+
+.details-ingredients::after {
+  content: "";
+  width: 70vw;
+  height: 0.2vh;
+  position: absolute;
+  left: 12rem;
+  background-color: #d4d4d4;
+}
+
+.details-ingredients h1{
+  font-family:"Kurale", serif ;
+  font-size: 1.9rem;
+ 
+}
+
+.details-ingredients-content{
+  color:rgba(29, 29, 27, 0.788);
+  padding-top:1rem;
+  line-height: 2.2rem;
+  padding-bottom: 1rem;
+
+
+}
+
+.details-instructions{
+  padding: 1rem 0 0 13rem;
+  height: 45vh;
+}
+
+.details-instructions h1{
+  font-family:"Kurale", serif ;
+  font-size: 1.9rem;
+ 
+}
+
+.details-instructions-content{
+  color:rgba(29, 29, 27, 0.788);
+  padding-top:1rem;
+  line-height: 2.2rem;
+  padding-bottom: 1rem;
+  
+
+}
+
+.dot{
+  content: "";
+  height:10px;
+  width:10px;
+  background-color: #ffcf00;
+  border-radius: 50%;
+  display: inline-block;
+ margin-right: 1rem;
+}
+
+.details-instructions-content p{
+  color:rgba(29, 29, 27, 0.788);
+  
+  line-height: 3.2rem;
+  
+}
+
+.details-printrecipe{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:30vh;
+  
+}
+
+.Print-recipe{
+  background-color:#ffcf00 ;
+  width: 17vw;
+  height: 8vh;
+  border: none;
+  border-radius: 0.3rem;
+  font-size: 1.5rem;
+  font-family:"Kurale", serif ;
+}
+
+.Print-recipe:hover{
+  cursor: pointer;
+  background-color: #FFFFFF;
+  border:3px solid #ffcf00;
+  border-radius: 0.3rem;
+}
+
+
+
+
+
+
+
+
+
