@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/media.css" />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Salsa&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kurale&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fontawsom -->
+    <script
+      src="https://kit.fontawesome.com/f5c0007ba0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Start header section -->
+    <header class="header-container">
+      <section class="header-left">
+        <img
+          src="assets/images/logo.png"
+          alt="This is a logo img for Recipe website"
+        />
+      </section>
+      <section class="header-nav">
+        <nav><a class="active" href="index.html">Home</a></nav>
+        <nav><a class="active" href="list.html">Category</a></nav>
+        <nav><a class="home active" href="submit.html">Sumbit Recipe</a></nav>
+      </section>
+      <section class="header-right">
+        <input
+          class="seacrhRecp"
+          type="search"
+          id="Recpsearch"
+          placeholder="Search Recipe"
+        />
+        <i class="fa-solid fa-heart favouite" style="color: #FFCF00"></i>
+        <i class="fa-solid fa-bars toggle" style="color: #FFFFFF"></i>
+      </section>
+    </header>
+    <!-- Start Main section -->
+    <main>
+      <section class="Submit-container">
+        <h1>Submit a new <span>Recipe</span></h1>
+        <section class="submit-content">
+          <section class="submit-content-left">
+            <section class="submit-content-left-top">
+              <i class="fa-solid fa-camera" style="color: #636262"></i>
+              <p>Upload photo PNG or JPG</p>
+            </section>
+            <section class="submit-content-left-bottom">
+              <section class="submit-preptime">
+                <form>
+                  <label>Prep Time <span>*</span> </label>
+                  <input type="time" required />
+                </form>
+              </section>
+              <section class="submit-cooktime">
+                <form>
+                  <label>Cook Time <span>*</span> </label>
+                  <input type="time" required />
+                </form>
+              </section>
+            </section>
+          </section>
+          <section class="submit-content-right">
+            <h2>Recipe Details</h2>
+            <section class="recipe-details-form">
+              <form>
+                <label>Recipe Title <span>*</span> </label>
+                <input
+                  class="recipe-title"
+                  type="text"
+                  required
+                  placeholder="Please enter your recipe title"
+                />
+                <label>Recipe Description <span>*</span> </label>
+                <textarea
+                  rows="6"
+                  cols="50"
+                  placeholder="Please write full  description for recipe... ."
+                  required
+                ></textarea>
+                <label>Ingredients <span>*</span> </label>
+                <textarea
+                  rows="10"
+                  cols="50"
+                  placeholder="please put each ingredients and it’s measurement on it’s own."
+                  required
+                ></textarea>
+                <label>Instructions<span>*</span> </label>
+                <textarea
+                  rows="10"
+                  cols="50"
+                  placeholder=" please put each step on it’s own line."
+                  required
+                ></textarea>
+              </form>
+            </section>
+          </section>
+        </section>
+        <section class="submit-recipe">
+          <form>
+            <input type="checkbox" />
+            <label
+              >Submit this as a yummy website,By check mark you agree to the
+              <span>tearms & conditions</span></label
+            >
+          </form>
+          <section class="submit-btn">
+            <button>Submit Your recipe</button>
+          </section>
+        </section>
+      </section>
+    </main>
+    <!-- Start Footer section -->
+    <footer class="footer-container">
+      <section class="footer-top">
+        <img src="assets/images/logo.png" />
+        <p>
+          This website shows all recipes that can added by different
+          people.Enjoy it!
+        </p>
+      </section>
+      <section class="footer-socialmedia">
+        <img src="assets/images/facebook.png" alt="facebook-socialMedia" />
+        <img src="assets/images/instagram.png" alt="inst-socialMedia" />
+        <img src="assets/images/linkedin.png" alt="linked-socialMedia" />
+      </section>
+      <section class="footer-nav">
+        <nav><a id="home" href="#">Home</a></nav>
+        <nav><a href="#">Category</a></nav>
+        <nav><a href="#">Sumbit Recipe</a></nav>
+      </section>
+      <section class="footer-bottom">
+        <p class="copyright">© Copyright 2023</p>
+        <section class="footer-bottom-right">
+          <p>Terms & condition</p>
+          <p>PrivacyPolicy</p>
+        </section>
+      </section>
+    </footer>
+  </body>
+</html>

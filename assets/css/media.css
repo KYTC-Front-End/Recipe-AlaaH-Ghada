@@ -1,78 +1,64 @@
-/**************************************** Small Sreen ****************************************/
 @media (max-width: 600px) {
   /* home page */
 
   .header-left img {
-    width: 18vw;
+    width: 23vw;
   }
-
-  .header-nav {
-    display: none;
+  .Submit-container h1 span {
+    font-size: 2rem;
   }
-
-  .header-container .toggle:hover,
-  .header-nav {
-    display: flex;
+  .submit-content {
     flex-direction: column;
     position: absolute;
     top: 100%;
-    left: 0px;
+    right: 0;
     width: 100%;
-    padding: 1rem;
     background-color: black;
-    cursor: pointer;
   }
 
-  .header-right .seacrhRecp {
-    width: 60vw;
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-    font-size: 1rem;
-    outline: none;
+  .header .header-right .seacrhRecp {
+    width: 27vw;
+    height: 5vh;
+    outline: 0;
   }
 
   .hero-container {
-    height: 105vh;
+    height: 80vh;
     flex-direction: column;
     align-items: center;
   }
-
-  .hero-content {
+  .recipe-details-form {
+    display: flex;
     width: 100%;
     align-items: center;
-    padding: 5rem 3rem 3rem;
-    line-height: 5rem;
+    justify-content: center;
   }
-
-  .hero-content-title span {
-    font-size: 2rem;
+  .recipe-details-form form {
+    justify-content: space-evenly;
+    gap: 1rem;
   }
-
-  .hero-content-desc {
-    font-size: 1.5rem;
-    line-height: 2rem;
-    width: 61vw;
-    text-align: center;
+  .submit-recipe button {
+    width: 31vw;
+    height: 4rem;
   }
 
   .hero-btn {
     width: 35vw;
-    height: 9vh;
+    height: 6vh;
     font-size: 1.8rem;
   }
 
-  .hero-img img {
-    width: 50vw;
-    padding: 1rem;
+  .Submit-container {
+    gap: 3rem;
   }
 
   .features-container {
-    height: 406vh;
+    height: 244vh;
   }
 
   .features-title {
     text-align: center;
-    line-height: 1.3rem;
+    line-height: 1.5rem;
   }
 
   .features-title h1 {
@@ -89,13 +75,14 @@
 
   .features-content {
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     gap: 2rem;
   }
 
   .features-content-item {
-    width: 80%;
-    height: 46rem;
+    width: 60%;
+    height: 64vh;
   }
 
   .features-content-item h3 {
@@ -103,10 +90,9 @@
   }
 
   .features-content-item-des p {
+    font-size: 1.2rem;
     padding: 1.5rem;
     color: rgb(125 119 119);
-    font-size: 1.5rem;
-    line-height: 2.2rem;
   }
 
   .features-rating i,
@@ -115,17 +101,11 @@
   }
 
   .features-ViewMore p {
-    padding: 2rem 6rem;
-    font-size: 2rem;
-  }
-
-  .features-ViewMore i {
-    font-size: 2rem;
-    padding: 2rem 0.5rem;
+    padding: 2rem 10rem;
   }
 
   .MostCategory-container {
-    height: 120vh;
+    height: 92vh;
   }
 
   .MostCategory-title h1 {
@@ -141,49 +121,42 @@
     flex-wrap: wrap;
     gap: 4rem;
   }
-  .MostCategory-content-item {
-    width: 29%;
+  .submit-content-left {
+    width: 100%;
+    height: 44vh;
   }
-
-  .MostCategory-content-item img {
-    width: 27vw;
+  .submit-content-left-top {
+    width: 50%;
   }
-
-  .MostCategory-content-item p {
-    font-size: 2rem;
+  .submit-content-left-bottom {
+    width: 50%;
   }
 
   .footer-container {
-    height: 63vh;
+    height: 47vh;
+  }
+  .submit-content-right {
+    width: 77%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .recipe-details-form {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .recipe-details-form form {
+    justify-content: space-evenly;
+    gap: 1rem;
+  }
+  .submit-recipe button {
+    width: 26vw;
+    height: 4rem;
   }
 
-  .footer-top {
-    width: 50vw;
-  }
 
-  .footer-top img {
-    width: 21vw;
-  }
-
-  .footer-top p {
-    font-size: 1.3rem;
-  }
-
-  .footer-socialmedia img {
-    width: 12vw;
-    padding-left: 2rem;
-  }
-  .footer-nav {
-    width: 58vw;
-  }
-
-  .footer-nav a {
-    font-size: 1.4rem;
-  }
-
-  .footer-bottom {
-    padding-top: 2rem;
-  }
 
   .footer-bottom p {
     font-size: 1.2rem;
@@ -191,52 +164,11 @@
   .footer-bottom-right {
     gap: 0.8rem;
   }
-
-  /* Details Page */
-  .details-hero {
-    height: 41vh;
-  }
-
-  .details-hero img {
-    width: 32%;
-  }
-
-  .details-recipe-title::after {
-    left: 8rem;
-  }
-
-  .details-ingredients {
-    padding: 1rem 0 0 8rem;
-  }
-
-  .details-ingredients::after {
-    left: 8rem;
-  }
-
-  .details-instructions {
-    padding: 1rem 0 0 8rem;
-    height: 56vh;
-  }
-
-  .dot {
-    height: 7px;
-    width: 7px;
-  }
-
-  .details-printrecipe {
-    height: 24vh;
-  }
-
-  .Print-recipe {
-    width: 29vw;
-    height: 9vh;
-  }
 }
 
-/************************************************** Tablet Screen **************************************/
+/* Tablet Screen */
 
-@media (min-width: 601px) and (max-width: 900px) {
-  /* home page */
+@media (min-width: 600px) and (max-width: 900px) {
   .header-left img {
     width: 18vw;
   }
@@ -246,7 +178,7 @@
   }
 
   .hero-container {
-    height: 67vh;
+    height: 59vh;
   }
 
   .hero-btn {
@@ -254,21 +186,20 @@
   }
 
   .features-container {
-    height: 133vh;
+    height: 103vh;
   }
 
   .features-content-item {
     width: 29vw;
-    height: 24rem;
+    height: 57vh;
   }
-
   .features-ViewMore p {
-    padding: 1.2rem;
-    text-align: right;
+    padding-top: 3rem;
+    text-align: center;
   }
 
   .MostCategory-container {
-    height: 58vh;
+    height: 43vh;
   }
 
   .MostCategory-title {
@@ -278,7 +209,7 @@
     font-size: 1.3rem;
   }
   .footer-container {
-    height: 74vh;
+    height: 57vh;
   }
   .footer-top {
     width: 50vw;
@@ -305,45 +236,5 @@
   .footer-bottom-right {
     gap: 1rem;
   }
-  /* details page */
-
-  .details-recipe-title {
-    height: 31vh;
-  }
-
-  .details-recipe-title::after {
-    left: 10rem;
-  }
-
-  .details-ingredients {
-    padding: 1rem 0 0 10rem;
-  }
-
-  .details-ingredients::after {
-    left: 10rem;
-  }
-
-  .details-instructions {
-    padding: 1rem 0 0 10rem;
-  }
-
-  .details-instructions {
-    height: 70vh;
-  }
-
-  .details-instructions-content p {
-    color: rgba(29, 29, 27, 0.788);
-    line-height: 3rem;
-  }
-
-  .Print-recipe {
-    width: 24vw;
-    height: 11vh;
-  }
 }
 
-@media (min-width: 601px) {
-  .header-container .toggle {
-    display: none;
-  }
-}
