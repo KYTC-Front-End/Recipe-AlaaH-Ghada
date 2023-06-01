@@ -98,11 +98,21 @@
   animation-delay: -2s;
 }
 
+
 @keyframes moveleft {
   0% {
     left: 0px;
     top: 0px;
-  }}
+  }
+  25% {
+    left: -200px;
+    top: 0px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
   /* ***************start list category page******************* */
   .header-bottom {
     height: 30vh;
@@ -166,7 +176,16 @@
   0% {
     right: 0px;
     top: 0px;
-  }}
+  }
+  25% {
+    right: -200px;
+    top: 0px;
+  }
+  100% {
+    right: 0px;
+    top: 0px;
+  }
+}
   .Cat-container {
     display: flex;
     justify-content: center;
